@@ -75,3 +75,71 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
 }
+
+/* Destacar la pestaña activa */
+.nav-links a.active {
+    color: #94d2bd;
+    border-bottom: 2px solid #94d2bd;
+}
+
+/* Sección productos */
+.productos-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.productos-section h1 {
+    color: #0a9396;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjetas individuales */
+.producto-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+}
+
+.producto-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 250px;
+}
+
+.producto-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #005f73;
+}
+
+.producto-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.producto-card .precio {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #ee6c4d;
+}
