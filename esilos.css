@@ -143,3 +143,37 @@ footer {
     font-size: 1.1rem;
     color: #ee6c4d;
 }
+
+/* ESTILOS PARA LA PAGINA DE OFERTAS */
+
+/* Sección ofertas */
+.ofertas-section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.ofertas-section h1 {
+    color: #bb3e03;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* Modificación para productos en oferta */
+.producto-card.oferta {
+    border: 2px solid #bb3e03;
+}
+
+.producto-card .precio-original {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+    font-weight: 400;
+}
+
+.producto-card .precio-descuento {
+    color: #bb3e03;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
