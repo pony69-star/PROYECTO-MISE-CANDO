@@ -13,39 +13,88 @@ body {
 }
 
 /* Barra de navegación */
+/* Barra de navegación */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-    font-size: 1.8rem;
-    color: #FFD700;
-    font-weight: bold;
+  font-size: 1.8rem;
+  color: #FFD700;
+  font-weight: bold;
 }
 
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  color: #FFD700;
+  border: none;
+  cursor: pointer;
+}
+
+/* Enlaces normales en escritorio */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .nav-links a {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #94d2bd;
+  color: #94d2bd;
 }
+
+/* Responsive: menú desplegable en móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 
 /* Sección de bienvenida */
 .bienvenida {

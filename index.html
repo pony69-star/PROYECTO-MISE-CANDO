@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="esilos.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">TiendaCel</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="apple.html">Apple</a></li>
-                <li><a href="samsung.html">Samsung</a></li>
-                <li><a href="xiaomi.html">Xiaomi</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="acercade.html">Acerca de</a></li>
-            </ul>
-        </nav>
-    </header>
+
+  <header>
+  <nav class="navbar">
+    <div class="logo">TiendaCel</div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="ofertas.html">Ofertas</a></li>
+      <li><a href="apple.html">Apple</a></li>
+      <li><a href="samsung.html">Samsung</a></li>
+      <li><a href="xiaomi.html">Xiaomi</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="acercade.html">Acerca de</a></li>
+    </ul>
+  </nav>
+</header>
 
     <main>
         <section style="background-color: black;" class="bienvenida">
@@ -67,6 +69,16 @@
     <footer>
         <p>&copy; 2025 TiendaCel - Todos los derechos reservados</p>
     </footer>
+
+    <script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  toggleBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+</script>
+
 
 </body>
 </html>
