@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Título de la Página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Celulares</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="esilos.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TiendaCel</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <h1>Hola Mundo</h1>
-  <p>Este es un ejemplo básico de una página HTML.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-    elit. Cumque deserunt harum a labore excepturi molestias
-     quisquam obcaecati consectetur architecto unde dolorum 
-     amet eius dolores voluptatibus esse nihil reprehenderit,
-      aliquam eum.git switch master</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-        elit. Harum nulla sint perspiciatis, odit soluta 
-        veritatis delectus accusantium. Vero, dolore laborum 
-        qui possimus iure a obcaecati vel modi sit, aliquam 
-        odio! añadi otro lorem</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-        elit. Harum nulla sint perspiciatis, odit soluta 
-        veritatis delectus accusantium. Vero, dolore laborum 
-        qui possimus iure a obcaecati vel modi sit, aliquam 
-        odio! añadi otro lorem</p>
-        
+    <main>
+        <section class="bienvenida">
+            <h1>Bienvenido a TiendaCel</h1>
+            <p>Lleva la tecnología en tu bolsillo: descubre el smartphone 
+                perfecto para tu estilo de vida, al mejor precio.</p>
+        </section>
+    </main>
+    <a href="productos.html" style="text-decoration: none;">
+    <section style="background-color: black;" class="bienvenida">
+            <h1
+             style="color: #FFD700;">Apple</h1>
+             <img src="data:image/jpeg;base64,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" alt="Imagen Base64" width="300">
+
+             <p style="color: #FFD700;">Simplemente funciona. El poder de lo elegante.</p>
+        </section>
+        </a>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 TiendaCel - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>
