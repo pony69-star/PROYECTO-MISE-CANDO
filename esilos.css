@@ -275,62 +275,96 @@ footer {
     color: #999;
 }
 
-
-/* ESTILOS PARA ACERCA DE */
-
-/* ESTILOS PARA LA PAGINA DE acerca */
-
-/* ESTILOS PARA LA PAGINA DE acerca */
+/* ESTILOS PARA ACERCADE */
 
 .acerca-section {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 0 1rem;
-    text-align: left;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  color: #eee;
+  text-align: left;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .acerca-section h1 {
-    color: #0a9396;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  text-align: center;
+  color: #0a9396;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
 
-.acerca-section h2 {
-    color: #005f73;
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    margin-bottom: 0.8rem;
+.intro-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.acerca-section p {
-    color: #555;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+.equipo-img img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
-.valores-lista {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-    color: #333;
-    font-size: 1.05rem;
-    margin-bottom: 2rem;
+.grid-acerca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
-
-/* ESTILO PARA CUADROS DE MISION Y VISION EN acerca.html */
 
 .acerca-card {
-    background-color: #e9f5f4;
-    border-left: 5px solid #0a9396;
-    padding: 1.2rem 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    margin-bottom: 2rem;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-left: 5px solid #0a9396;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.acerca-card h2 {
+  color: #94d2bd;
+  margin-bottom: 0.8rem;
 }
 
 .acerca-card p {
-    margin: 0;
-    font-size: 1.1rem;
-    color: #333;
+  font-size: 1.1rem;
+  color: #ddd;
 }
 
+.valores-card {
+  background: #272727;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.valores-lista {
+  list-style-type: square;
+  color: #ccc;
+  padding-left: 1.5rem;
+}
+
+.porque-elegirnos {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #ccc;
+}
+
+.porque-elegirnos h2 {
+  color: #0a9396;
+  margin-bottom: 1rem;
+}
+
+.porque-elegirnos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.porque-elegirnos li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
