@@ -178,83 +178,101 @@ footer {
     font-size: 1.2rem;
 }
 
-/* ESTILOS PARA LA PAGINA DE contacto */
-body {
+/*body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f9fa;
-}
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}*/
 
 .contacto-section {
     max-width: 700px;
-    background: #ffffff;
-    padding: 3rem 2rem;
-    margin: 3rem auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #111111;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    text-align: center;
 }
 
 .contacto-section h1 {
     color: #0a9396;
-    margin-bottom: 0.8rem;
-    font-size: 2.6rem;
-    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.8rem;
 }
 
 .contacto-section p {
-    color: #555;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    text-align: center;
+    color: #dddddd;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
 }
 
 .form-contacto {
     display: flex;
     flex-direction: column;
-    gap: 1.3rem;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-row div {
+    flex: 1;
 }
 
 .form-contacto label {
+    text-align: left;
     font-weight: 600;
-    color: #005f73;
+    color: #94d2bd;
+    margin-bottom: 0.3rem;
+    display: block;
 }
 
 .form-contacto input,
 .form-contacto textarea,
 .form-contacto select {
-    padding: 0.85rem 1rem;
+    width: 100%;
+    padding: 0.9rem 1rem;
     border-radius: 10px;
-    border: 2px solid #cce3dc;
+    border: 1.5px solid #0a9396;
+    background-color: #1a1a1a;
+    color: #ffffff;
     font-size: 1rem;
-    background-color: #fefefe;
-    transition: all 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .form-contacto input:focus,
 .form-contacto textarea:focus,
 .form-contacto select:focus {
-    border-color: #0a9396;
-    box-shadow: 0 0 0 3px rgba(10, 147, 150, 0.15);
+    border-color: #94d2bd;
     outline: none;
-}
-
-.form-contacto textarea {
-    resize: vertical;
 }
 
 .form-contacto button {
     background-color: #0a9396;
     color: #ffffff;
-    font-weight: 600;
-    padding: 0.9rem 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
     border: none;
     border-radius: 12px;
-    font-size: 1.1rem;
     cursor: pointer;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease;
 }
 
 .form-contacto button:hover {
     background-color: #005f73;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: #999;
 }
 
 
