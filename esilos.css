@@ -178,70 +178,85 @@ footer {
     font-size: 1.2rem;
 }
 
-/* ESTILOS PARA LA PAGINA DE contactos*/
+/* ESTILOS PARA LA PAGINA DE contacto */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
 
 .contacto-section {
-    max-width: 600px;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 3rem 2rem;
     margin: 3rem auto;
-    padding: 0 1rem;
-    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .contacto-section h1 {
     color: #0a9396;
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 2.6rem;
+    text-align: center;
 }
 
 .contacto-section p {
     color: #555;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .form-contacto {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1.3rem;
 }
 
 .form-contacto label {
-    text-align: left;
     font-weight: 600;
     color: #005f73;
 }
 
 .form-contacto input,
-.form-contacto textarea {
-    padding: 0.8rem 1rem;
-    border-radius: 8px;
-    border: 1.8px solid #94d2bd;
+.form-contacto textarea,
+.form-contacto select {
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 2px solid #cce3dc;
     font-size: 1rem;
-    resize: vertical;
-    transition: border-color 0.3s ease;
+    background-color: #fefefe;
+    transition: all 0.3s ease;
 }
 
 .form-contacto input:focus,
-.form-contacto textarea:focus {
+.form-contacto textarea:focus,
+.form-contacto select:focus {
     border-color: #0a9396;
+    box-shadow: 0 0 0 3px rgba(10, 147, 150, 0.15);
     outline: none;
+}
+
+.form-contacto textarea {
+    resize: vertical;
 }
 
 .form-contacto button {
     background-color: #0a9396;
     color: #ffffff;
-    font-weight: 700;
-    padding: 0.9rem;
+    font-weight: 600;
+    padding: 0.9rem 1.5rem;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 12px;
     font-size: 1.1rem;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .form-contacto button:hover {
     background-color: #005f73;
 }
+
 
 /* ESTILOS PARA ACERCA DE */
 
