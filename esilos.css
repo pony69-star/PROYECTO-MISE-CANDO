@@ -59,7 +59,7 @@ body {
 
 .bienvenida h1 {
     font-size: 2.5rem;
-    color: #0a9396;
+    color: black;
 }
 
 .bienvenida p {
@@ -91,7 +91,7 @@ footer {
 }
 
 .productos-section h1 {
-    color: #0a9396;
+    color: black;
     margin-bottom: 2rem;
     font-size: 2.5rem;
 }
@@ -129,7 +129,7 @@ footer {
 .producto-card h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #005f73;
+    color: black;
 }
 
 .producto-card p {
